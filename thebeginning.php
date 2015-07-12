@@ -50,13 +50,36 @@
              E-mail: <input type="text" name="email">
              <input type="submit" name="submit" value="Join"> 
           </form>
-
-
-        
         </div>
 
-        <div id="submit_div">
-          <button type="button" id="submit_button" onclick="btnSubmitArt()">Submit your art!</button>
+        <button type="button" id="btn_contact_us">Submit your art!</button>
+
+        <!--Contact Form -->
+        <div id="contactdiv">
+          <form class="form" action="#" id="contact">
+            <img src="images/button_cancel.png" class="img" id="cancel"/>
+            <h3>Contact Form</h3>
+            <hr/><br/>
+            <label>Name: <span>*</span></label>
+            <br/>
+            <input type="text" id="name" placeholder="Name"/><br/>
+            <br/>
+            <label>Email: <span>*</span></label>
+            <br/>
+            <input type="text" id="email" placeholder="Email"/><br/>
+            <br/>
+            <label>Contact No: <span>*</span></label>
+            <br/>
+            <input type="text" id="contactno" placeholder="10 digit Mobile no."/><br/>
+            <br/>
+            <label>Message:</label>
+            <br/>
+            <textarea id="message" placeholder="Message......."></textarea><br/>
+            <br/>
+            <input type="button" id="send" value="Send"/>
+            <input type="button" id="cancel" value="Cancel"/>
+            <br/>
+          </form>
         </div>
 
     </body>

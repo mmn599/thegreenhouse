@@ -22,16 +22,45 @@ h1,h2 {
 	text-align: center;
 }
 
-#submit {
-	display: inline-block;
-	background-color: red;
-	position: fixed;
-	bottom: 0;
-	right: 0;
-}
-
-#submit_button {
+#btn_contact_us {
     position: absolute;
     bottom: 10px;
     right: 10px;
+}
+
+#contactdiv{
+	opacity:0.92;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	background: #000;
+	display: none;
+}
+
+#popup{
+	padding-top:80px;
+}
+
+#contact {
+	width:350px;
+	margin:0px;
+	background-color:white;
+	font-family: 'Fauna One', serif;
+	position: relative;
+	border: 5px solid rgb(90, 158, 181);
+}
+
+.img{
+	float: right;
+	margin-top: -35px;
+	margin-right: -37px;
+}
+
+#contact{
+	left: 50%;
+	top: 50%;
+	margin-left:-210px;
+	margin-top:-255px;
 }
