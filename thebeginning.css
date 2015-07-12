@@ -10,15 +10,25 @@ h1,h2 {
 	height: 264px;
 }
 
-#showcase_vidoe {
-	width: 640px;
-	height: 264px;
-}
-
 #showcase_description {
 	text-align: center;
 }
 
+.center {
+	text-align: center;
+}
+
+#showcase_join {
+	text-align: center;
+}
+
+#submit {
+	display: inline-block;
+	background-color: red;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+}
 
 #submit_button {
     position: absolute;

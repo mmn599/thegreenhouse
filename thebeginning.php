@@ -13,7 +13,10 @@
           <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.5.min.js" type="text/javascript"></script>
           <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js" type="text/javascript"></script>
 
-          <!-- JS for submitting -->
+          <!-- Parse CDN -->
+          <script src="//www.parsecdn.com/js/parse-1.4.2.min.js"></script>
+
+          <!-- JS -->
           <script src="thebeginning.js"></script>
 
           <!-- CSS -->
@@ -23,7 +26,7 @@
     </head>
     <body>
       
-        <h1>The Starving Artist's Showcase</h1>
+        <h1>The Starving Artist Showcase</h1>
 
         <hr>
 
@@ -32,22 +35,28 @@
         <div id="showcase">
 
           <video id="showcase_video" class="video-js vjs-default-skin"
-            controls preload="auto"
+              controls preload="auto" width="640" height="264"
               poster="http://video-js.zencoder.com/oceans-clip.png"
-                data-setup='{"example_option":true}'>
-                 <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
-                  <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
-                   <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
-                    <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+              data-setup='{"example_option":true}'>
+              <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
+              <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
+              <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
+              <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
           </video>
-
 
           <p id="showcase_description">This video comes to us from Jenkins McDoogleBerry. In his own words, it is a 'short film about dolphins taking over the world'. Watch it, join in on the dicussion, and be sure to tune in next week for Basil McBitchface's documentary on snails!</p>
 
+          <form id="showcase_join" method="post" action="emailsignup.php">
+             E-mail: <input type="text" name="email">
+             <input type="submit" name="submit" value="Join"> 
+          </form>
+
+
+        
         </div>
 
-        <div id="submit">
-          <button type="button" id="submit_button" onclick="submitArt()">Submit your art!</button>
+        <div id="submit_div">
+          <button type="button" id="submit_button" onclick="btnSubmitArt()">Submit your art!</button>
         </div>
 
     </body>
