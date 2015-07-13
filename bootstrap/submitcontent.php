@@ -9,12 +9,10 @@ require 'vendor/phpmailer/phpmailer/PHPMailerAutoload.php';
 $name = htmlspecialchars($_POST["name"]);
 $email = htmlspecialchars($_POST["email"]);
 $description = htmlspecialchars($_POST["description"]);
-$link = htmlspecialchars($_POST["link"]);
 
 $message = "Name: " . $name . "<br>" .
 			"Email: " . $email . "<br>" .
-			"Description: " . $description . "<br>" .
-			"Link: " . $link . "<br>";
+			"Description: " . $description . "<br>";
 
 //Create a new PHPMailer instance
 $mail = new PHPMailer;

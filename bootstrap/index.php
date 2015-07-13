@@ -66,6 +66,8 @@
   </div>
 
 
+  <!-- IMPORT STUFF BELOW HERE -->
+
   <form method="post" action="emailsignup.php">
     E-mail: <input type="text" name="email">
     <input type="submit" name="submit" value="Join"> 
@@ -98,10 +100,6 @@
               <label for="submit_description">Description:</label>
               <input type="text" class="form-control" id="submit_description" name="description">
             </div>
-            <div class="form-group">
-              <label for="submit_link">Link:</label>
-              <input type="text" class="form-control" id="submit_link" name="link">
-            </div>
           </form>
         </div>
 
@@ -112,6 +110,8 @@
       </div>
     </div>
   </div>
+
+  <!-- IMPORTANT STUFF ABOVE HERE -->
 
 </body>
 </html>
