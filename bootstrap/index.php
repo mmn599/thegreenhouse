@@ -26,7 +26,11 @@
 
 
   <!-- CSS -->
-  <link rel="stylesheet" type="text/css" href="thebeginning.css">
+  <link rel="stylesheet" type="text/css" href="index.css">
+
+  <!-- JS -->
+  <script src="index.js"></script>
+
 
 
 </head>
@@ -44,22 +48,70 @@
       <div id="showcase">
 
         <video id="showcase_video" class="video-js vjs-default-skin"
-        controls preload="auto" width="640" height="264"
-        poster="http://video-js.zencoder.com/oceans-clip.png"
-        data-setup='{"example_option":true}'>
-        <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
-        <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
-        <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
-        <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+          controls preload="auto" width="640" height="264"
+          poster="http://video-js.zencoder.com/oceans-clip.png"
+          data-setup='{"example_option":true}'>
+          <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
+          <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
+          <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
+          <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
         </video>
 
+      </div>
+    </div>
+    <div id="music" class="tab-pane fade">
+      <h3>Music</h3>
+      <p>Some content in menu 1.</p>
     </div>
   </div>
-  <div id="music" class="tab-pane fade">
-    <h3>Music</h3>
-    <p>Some content in menu 1.</p>
+
+
+  <form method="post" action="emailsignup.php">
+    E-mail: <input type="text" name="email">
+    <input type="submit" name="submit" value="Join"> 
+  </form>
+
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#contentSubmitModal">Submit Content</button>
+
+  <!-- Modal -->
+  <div id="contentSubmitModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+    <div class="modal-content">
+
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Submit your Art</h4>
+        </div>
+
+        <div class="modal-body">
+          <form role="form">
+            <div class="form-group">
+              <label for="submit_name">Name:</label>
+              <input type="text" class="form-control" id="submit_name" name="name">
+            </div>
+            <div class="form-group">
+              <label for="submit_email">Email address:</label>
+              <input type="email" class="form-control" id="submit_email" name="email">
+            </div>
+            <div class="form-group">
+              <label for="submit_description">Description:</label>
+              <input type="text" class="form-control" id="submit_description" name="description">
+            </div>
+            <div class="form-group">
+              <label for="submit_link">Link:</label>
+              <input type="text" class="form-control" id="submit_link" name="link">
+            </div>
+          </form>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" id="submit_btn" class="btn btn-default" data-dismiss="modal">Submit</button>
+        </div>
+
+      </div>
+    </div>
   </div>
-</div>
 
 </body>
 </html>

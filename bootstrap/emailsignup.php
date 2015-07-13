@@ -4,11 +4,11 @@
   $name_error = "";
 
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $ret = save_email($_POST["email"]);
+    $ret = save_email_in_database($_POST["email"]);
     echo $ret;
   }
 
-  function save_email($data) {
+  function save_email_in_database($data) {
 
     $data = trim($data);
     $data = stripslashes($data);
