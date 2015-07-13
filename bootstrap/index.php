@@ -31,6 +31,8 @@
   <!-- JS -->
   <script src="index.js"></script>
 
+
+
 </head>
 <body>
   <div class="header">
@@ -45,7 +47,6 @@
     </div>
   </div>
   <br>
-
 
   <div id="video" class="tab-pane fade in active">
     <div id="showcase">
@@ -102,7 +103,5 @@
       </div>
     </div>
   </div>
-  <!-- IMPORTANT STUFF ABOVE HERE -->
-
 </body>
 </html>
